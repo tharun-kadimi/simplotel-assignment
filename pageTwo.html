@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplotel assignment page2</title>
+</head>
+<body>
+    <!-- used internal styles -->
+    <style>
+        *{
+            margin: 0px;
+            box-sizing: content-box;
+        }
+
+        .bg-container{
+            background-image:linear-gradient(to right, hsl(64, 100%, 81%),pink);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-1{
+            width: 300px;
+            height: 300px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+        .img-2{
+            width: 300px;
+            height: 300px;
+        }
+        .img-3{
+            width: 300px;
+            height: 610px;
+        }
+        
+        .images{
+            display: flex;
+            flex-direction: row;
+        }
+        .sub-images{
+            display: flex;
+            flex-direction: column;
+        }
+        .content{
+            background-color: rgb(224, 106, 126);
+            height: 30vh;
+            padding: 20px;
+            margin-left: 30px;
+            justify-content: stretch;
+            
+        }
+        .arrow{
+          width: 20px;
+          height: 20px;
+          padding-top: 5px;
+        }
+        p{
+            padding-bottom: 25px;
+        }
+        h1{
+            padding-bottom: 25px;
+        }
+        button{
+            padding-top: 2px;
+            padding-bottom: 5px;
+            font-size: 25px;
+            background-color: transparent;
+            border: 0;
+        }
+    </style>
+  <div class="bg-container">
+    
+    <figure class="images">
+        <div class="sub-images">
+            <img src="/resources/images/pexels-rachel-claire-6752433.jpg" class="img-1"/>
+            <img src="/resources/images/pexels-eva-bronzini-6141651.jpg" class="img-2"/>
+
+        </div>
+        <img src="/resources/images/pexels-mister-mister-3434523.jpg" class="img-3"/>
+    </figure>
+<aside class="content">
+    <p>LOREM IPSUM</p>
+    <h1>LOREM IPSUM SET ADEMIR</h1>
+    <button>Click <img src="/resources/images/icons8-arrow-30.png" class="arrow"/></button>
+</aside>
+  </div>
+</body>
+</html>
