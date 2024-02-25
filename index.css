@@ -6,6 +6,7 @@
     background-color: hsla(12, 66%, 63%, 0.937);
     height: 10vh;
    font-style: bold;
+   width: 100%;
    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
 }
@@ -33,13 +34,18 @@
     flex-direction:column ;
     justify-content: center;
     align-items: flex-start;
-    padding: 15px;
+ padding: 20px;
+    width: 50%;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+.image-section{
     width: 50%;
 }
 .burger-image{
-   
+   max-width: 50vw;
     height: 90vh;
-    width: 50wh;
+   display: block;
     background-size:cover;
 }
 .heading{
@@ -61,3 +67,54 @@ a{
     text-decoration: none;
     color: white;
 }
+@media screen and ( min-width:768px) {
+    .medium-and-low-devices{
+        display:none;
+    }
+   
+}
+.medium-and-low-devices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4vh;
+}
+@media screen and ( max-width:768px) {
+   
+    .nav-items{
+       display:none;
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .content{
+        height: 45vh;
+       
+        width: 100%;
+        background-size: cover;
+        max-width: 90%;
+        padding: 20px;
+        
+    }
+    .article{
+        max-width: 100%;
+    }
+    .heading{
+        font-size: 24px;
+    }
+    .image-section{
+        width: 100%;
+       
+    }
+    
+    .burger-image{
+        max-width: 100vw;
+         height: 45vh;
+        display: block;
+         background-size:cover;
+     }
+} 
